@@ -4,6 +4,16 @@ A LAN-based remote desktop control application built with Python.
 Stream your screen, control it with mouse/keyboard, sync the clipboard,
 relay audio, and transfer files — all through an encrypted, password-authenticated connection.
 
+> Published on GitHub: `github.com/Arthurs011/NetDesk`
+
+## Status
+
+Functional proof-of-concept validated locally (host + controller over
+`127.0.0.1`). **No automated test suite yet** — verification is manual:
+start `sender.py`, connect with `reciever.py`, and exercise video, input,
+clipboard, and file transfer. macOS is the primary target; cross-platform
+behavior is unverified.
+
 ## Features
 
 - **Live screen streaming** — only changed screen regions are transmitted (delta video encoding, JPEG), drastically cutting bandwidth
